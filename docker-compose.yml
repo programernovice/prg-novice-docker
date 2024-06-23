@@ -1,0 +1,8 @@
+services:
+    nginx:
+      build: nginx
+      container_name: nginx-container
+      ports:
+        - 80:80
+      volumes:
+        - ~/repo/ft2:/var/www/html
